@@ -61,6 +61,9 @@ enum custom_keycodes {
     DEBOUNCE_RELEASE_SHOW,
     DEEP_SLEEP_TOGGLE,
     POWER_ON_TOGGLE,
+
+    UPDIR,
+    ARROW,
 };
 
 #define MAC_PRT G(S(KC_3))
