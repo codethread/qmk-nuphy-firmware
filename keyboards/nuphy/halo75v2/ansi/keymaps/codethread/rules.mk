@@ -1,3 +1,5 @@
 RGB_MATRIX_CUSTOM_USER = yes
 
 LTO_ENABLE = yes
+
+COMBO_ENABLE = yes
