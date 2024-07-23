@@ -58,19 +58,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //    ├──────┼──────┼──────┼──────────┼────────────┼───────────┼─────────┼──────┼──────┼──────┼──────┼──────┼──────┼──────────┤      ├──────┤
 //    │ tab  │      │  *   │    _     │     %      │     @     │   ../   │  [   │  ]   │  $   │      │  [   │  ]   │    \     │🮙🮙🮙🮙🮙🮙│ end  │
 //    ├──────┼──────┼──────┼──────────┼────────────┼───────────┼─────────┼──────┼──────┼──────┼──────┼──────┼──────┴──────────┤      ├──────┤
-//    │ caps │  !   │  =   │    (     │     )      │     ~     │    -    │  {   │  }   │  =>  │ ent  │  '   │       ent       │🮙🮙🮙🮙🮙🮙│ pgup │
+//    │ caps │  !   │  =   │    (     │     )      │     ~     │    -    │  {   │  }   │  =>  │  \   │  '   │       ent       │🮙🮙🮙🮙🮙🮙│ pgup │
 //    ├──────┼──────┼──────┼──────────┼────────────┼───────────┼─────────┼──────┼──────┼──────┼──────┼──────┴──────┬──────────┼──────┼──────┤
-//    │      │      │  ^   │    &     │     +      │           │    \    │  |   │  `   │  #   │      │    rsft     │🮙🮙🮙🮙🮙🮙🮙🮙🮙🮙│  up  │ pgdn │
+//    │      │      │  ^   │    &     │     +      │           │         │  |   │  `   │  #   │      │    rsft     │🮙🮙🮙🮙🮙🮙🮙🮙🮙🮙│  up  │ pgdn │
 //    ├──────┼──────┼──────┼──────────┴────────────┴───────────┴─────────┴──────┴──────┴──────┼──────┼──────┬──────┼──────────┼──────┼──────┤
 //    │  ^   │  ⎇   │ lgui │                                                                  │  ⎇   │ lgui │🮙🮙🮙🮙🮙🮙│   left   │ down │ rght │
 //    └──────┴──────┴──────┴──────────────────────────────────────────────────────────────────┴──────┴──────┘      └──────────┴──────┴──────┘
 [_SYM] = LAYOUT(
-  KC_ESC  , KC_BRMD    , KC_BRMU       , MAC_TASK      , MAC_SEARCH , MAC_VOICE , MAC_DND      , KC_MPRV         , KC_MPLY          , KC_MNXT   , KC_MUTE , KC_VOLD , KC_VOLU , MAC_PRTA , KC_INS  , KC_DEL  ,
-  KC_GRV  , KC_1       , KC_2          , KC_3          , KC_4       , KC_5      , KC_6         , KC_7            , KC_8             , KC_9      , KC_0    , KC_MINS , KC_EQL  , KC_BSPC  ,           KC_HOME ,
-  KC_TAB  , _______    , KC_ASTERISK   , KC_UNDERSCORE , KC_PERCENT , KC_AT     , UPDIR        , KC_LEFT_BRACKET , KC_RIGHT_BRACKET , KC_DOLLAR , _______ , KC_LBRC , KC_RBRC , KC_BSLS  ,           KC_END  ,
-  KC_CAPS , KC_EXCLAIM , KC_EQUAL      , KC_LPRN       , KC_RPRN    , KC_TILDE  , KC_MINUS     , KC_LCBR         , KC_RCBR          , ARROW     , KC_ENT  , KC_QUOT ,       KC_ENT       ,           KC_PGUP ,
-  _______ , _______    , KC_CIRCUMFLEX , KC_AMPR       , KC_PLUS    , _______   , KC_BACKSLASH , KC_PIPE         , KC_GRAVE         , KC_HASH   , _______ ,      KC_RSFT      ,            KC_UP   , KC_PGDN ,
-  KC_LCTL , KC_LALT    , KC_LCMD       ,                                                _______                                                 , KC_LALT , KC_LCMD ,           KC_LEFT  , KC_DOWN , KC_RIGHT
+  KC_ESC  , KC_BRMD    , KC_BRMU       , MAC_TASK      , MAC_SEARCH , MAC_VOICE , MAC_DND  , KC_MPRV         , KC_MPLY          , KC_MNXT   , KC_MUTE      , KC_VOLD , KC_VOLU , MAC_PRTA , KC_INS  , KC_DEL  ,
+  KC_GRV  , KC_1       , KC_2          , KC_3          , KC_4       , KC_5      , KC_6     , KC_7            , KC_8             , KC_9      , KC_0         , KC_MINS , KC_EQL  , KC_BSPC  ,           KC_HOME ,
+  KC_TAB  , _______    , KC_ASTERISK   , KC_UNDERSCORE , KC_PERCENT , KC_AT     , UPDIR    , KC_LEFT_BRACKET , KC_RIGHT_BRACKET , KC_DOLLAR , _______      , KC_LBRC , KC_RBRC , KC_BSLS  ,           KC_END  ,
+  KC_CAPS , KC_EXCLAIM , KC_EQUAL      , KC_LPRN       , KC_RPRN    , KC_TILDE  , KC_MINUS , KC_LCBR         , KC_RCBR          , ARROW     , KC_BACKSLASH , KC_QUOT ,       KC_ENT       ,           KC_PGUP ,
+  _______ , _______    , KC_CIRCUMFLEX , KC_AMPR       , KC_PLUS    , _______   , _______  , KC_PIPE         , KC_GRAVE         , KC_HASH   , _______      ,      KC_RSFT      ,            KC_UP   , KC_PGDN ,
+  KC_LCTL , KC_LALT    , KC_LCMD       ,                                              _______                                               , KC_LALT      , KC_LCMD ,           KC_LEFT  , KC_DOWN , KC_RIGHT
 ),
 
 //    ┌──────┬──────┬────┬────┬────┬────┬────┬────┬────┬────┬──────┬──────┬─────┬──────────┬──────┬──────┐
@@ -106,7 +106,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //    ├───┼───┼───┼───┼───┼───┼──────┼──────┼──────┼──────┼─────┼───┴───┬───┼───┼───┤
 //    │   │   │   │   │   │   │ G([) │ G({) │ G(}) │ G(]) │     │       │🮙🮙🮙│   │   │
 //    ├───┼───┼───┼───┴───┴───┴──────┴──────┴──────┴──────┼─────┼───┬───┼───┼───┼───┤
-//    │   │   │   │                                       │     │   │🮙🮙🮙│   │   │   │
+//    │   │   │   │                 bspc                  │     │   │🮙🮙🮙│   │   │   │
 //    └───┴───┴───┴───────────────────────────────────────┴─────┴───┘   └───┴───┴───┘
 [_NAV] = LAYOUT(
   ____ , ____    , ____    , ____ , ____    , ____ , ____               , ____       , ____       , ____                , ____   , ____ , ____ , ____ , ____ , ____,
@@ -114,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ____ , ____    , ____    , ____ , ____    , ____ , ____               , ____       , ____       , ____                , ____   , ____ , ____ , ____ ,        ____,
   ____ , KC_LSFT , KC_LALT , ____ , KC_LGUI , ____ , KC_LEFT            , KC_DOWN    , KC_UP      , KC_RIGHT            , KC_ENT , ____ ,    ____     ,        ____,
   ____ , ____    , ____    , ____ , ____    , ____ , G(KC_LEFT_BRACKET) , G(KC_LCBR) , G(KC_RCBR) , G(KC_RIGHT_BRACKET) , ____   ,    ____     ,        ____ , ____,
-  ____ , ____    , ____    ,                                            ____                                            , ____   , ____ ,        ____ , ____ , ____
+  ____ , ____    , ____    ,                                          KC_BSPC                                           , ____   , ____ ,        ____ , ____ , ____
 ),
 
 //    ┌───────────────────┬────────────────────┬─────────────────────┬───────────────────────┬───┬───┬───┬───┬─────────┬─────────┬───┬───┬───┬──────────┬─────────┬─────────┐
@@ -216,6 +216,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case SPACE:
 
             // found 200 pretty good just dropping a little
+            // 180 is good but often hitting space when trying to space then mod
             return 180;
         default:
             // default 200
